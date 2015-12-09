@@ -1,0 +1,252 @@
+\hypertarget{class_graphic_object}{}\section{Graphic\+Object Class Reference}
+\label{class_graphic_object}\index{Graphic\+Object@{Graphic\+Object}}
+
+
+{\ttfamily \#include $<$Graphic\+Object.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graphic_object_a29887ed3ec4ffaaae6d2d7f28ac048dd}{Graphic\+Object} (int primitive)
+\item 
+virtual \hyperlink{class_graphic_object_a8596b0e8d386731cfd19661eeef45296}{$\sim$\+Graphic\+Object} ()
+\item 
+void \hyperlink{class_graphic_object_a1daf1518ce33d49238fdd38be1c1005b}{draw} ()
+\item 
+\hyperlink{class_vertex}{Vertex} $\ast$ \hyperlink{class_graphic_object_ae68989c0381c4bef18208068de62af74}{add\+Vertex} (\hyperlink{class_vertex}{Vertex} $\ast$vertex)
+\item 
+void \hyperlink{class_graphic_object_a3fd446fb03658eb4119298db5d7182c6}{translate} (float t\+X, float t\+Y, float t\+Z)
+\item 
+void \hyperlink{class_graphic_object_aa51dede9d1b13aec64f64e1877ee9f81}{rotate} (float degrees)
+\item 
+void \hyperlink{class_graphic_object_aa587ad45dad9bb9ec59046c2d9d698c9}{scale} (float scale)
+\item 
+void \hyperlink{class_graphic_object_a6606911d41819e589ea73047117a0e01}{add\+Son} (\hyperlink{class_graphic_object}{Graphic\+Object} $\ast$object)
+\item 
+\hyperlink{class_graphic_object}{Graphic\+Object} $\ast$ \hyperlink{class_graphic_object_a64f5765caa33b38e72cc0179a0ce38eb}{check\+Click} (float x, float y)
+\item 
+\hyperlink{class_vertex}{Vertex} $\ast$ \hyperlink{class_graphic_object_ab5301d401d7a931a63a3e03dd00c4e6b}{check\+Vertex\+Click} (float x, float y)
+\item 
+void \hyperlink{class_graphic_object_a9a597def2d6b4b4c75a319111e21b202}{change\+Color} (float r, float g, float b)
+\item 
+void \hyperlink{class_graphic_object_a28912ebe3bf736083f20998d6a6ee7ec}{finished} ()
+\item 
+void \hyperlink{class_graphic_object_a6a7314e557934aa3598e0b52106e17e5}{set\+Selected} (bool selected)
+\item 
+void \hyperlink{class_graphic_object_a62869cfb7bece3bd1f483b58345e5077}{remove\+If\+Present} (\hyperlink{class_graphic_object}{Graphic\+Object} $\ast$object)
+\item 
+void \hyperlink{class_graphic_object_aa0a713d04dfacd127e5d5bf54359c323}{remove\+Vertex} (\hyperlink{class_vertex}{Vertex} $\ast$vertex)
+\item 
+void \hyperlink{class_graphic_object_afb59a756b5a9993c016f1807941ef54f}{add\+Family\+Transformation} (\hyperlink{class_transformation}{Transformation} transformation)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe Objeto Gráfico. Representa um polígono no mundo. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_graphic_object_a29887ed3ec4ffaaae6d2d7f28ac048dd}{}\index{Graphic\+Object@{Graphic\+Object}!Graphic\+Object@{Graphic\+Object}}
+\index{Graphic\+Object@{Graphic\+Object}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{Graphic\+Object}]{\setlength{\rightskip}{0pt plus 5cm}Graphic\+Object\+::\+Graphic\+Object (
+\begin{DoxyParamCaption}
+\item[{int}]{primitive}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_a29887ed3ec4ffaaae6d2d7f28ac048dd}
+Construtor. 
+\begin{DoxyParams}{Parameters}
+{\em primitive} & primitiva que indica o tipo do objeto. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graphic_object_a8596b0e8d386731cfd19661eeef45296}{}\index{Graphic\+Object@{Graphic\+Object}!````~Graphic\+Object@{$\sim$\+Graphic\+Object}}
+\index{````~Graphic\+Object@{$\sim$\+Graphic\+Object}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{$\sim$\+Graphic\+Object}]{\setlength{\rightskip}{0pt plus 5cm}virtual Graphic\+Object\+::$\sim$\+Graphic\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_graphic_object_a8596b0e8d386731cfd19661eeef45296}
+Destrutor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_graphic_object_afb59a756b5a9993c016f1807941ef54f}{}\index{Graphic\+Object@{Graphic\+Object}!add\+Family\+Transformation@{add\+Family\+Transformation}}
+\index{add\+Family\+Transformation@{add\+Family\+Transformation}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{add\+Family\+Transformation}]{\setlength{\rightskip}{0pt plus 5cm}void Graphic\+Object\+::add\+Family\+Transformation (
+\begin{DoxyParamCaption}
+\item[{{\bf Transformation}}]{transformation}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_afb59a756b5a9993c016f1807941ef54f}
+Adiciona transformação da família do grafo de cena.  transformação acumulada de todas as gerações anteriores ao objeto gráfico. \begin{DoxySeeAlso}{See also}
+Readme -\/ Tentativa de atualizar \hyperlink{class_b_box}{B\+Box} após transformações. 
+\end{DoxySeeAlso}
+\hypertarget{class_graphic_object_a6606911d41819e589ea73047117a0e01}{}\index{Graphic\+Object@{Graphic\+Object}!add\+Son@{add\+Son}}
+\index{add\+Son@{add\+Son}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{add\+Son}]{\setlength{\rightskip}{0pt plus 5cm}void Graphic\+Object\+::add\+Son (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphic\+Object} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_a6606911d41819e589ea73047117a0e01}
+Adiciona objeto gráfico filho. 
+\begin{DoxyParams}{Parameters}
+{\em $\ast$object} & poteiro para o objeto gráfico filho. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graphic_object_ae68989c0381c4bef18208068de62af74}{}\index{Graphic\+Object@{Graphic\+Object}!add\+Vertex@{add\+Vertex}}
+\index{add\+Vertex@{add\+Vertex}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{add\+Vertex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vertex}$\ast$ Graphic\+Object\+::add\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex} $\ast$}]{vertex}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_ae68989c0381c4bef18208068de62af74}
+Adiciona vértice ao objeto gráfico. 
+\begin{DoxyParams}{Parameters}
+{\em $\ast$vertex} & ponteiro para o vértice que está sendo adicionado \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graphic_object_a9a597def2d6b4b4c75a319111e21b202}{}\index{Graphic\+Object@{Graphic\+Object}!change\+Color@{change\+Color}}
+\index{change\+Color@{change\+Color}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{change\+Color}]{\setlength{\rightskip}{0pt plus 5cm}void Graphic\+Object\+::change\+Color (
+\begin{DoxyParamCaption}
+\item[{float}]{r, }
+\item[{float}]{g, }
+\item[{float}]{b}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_a9a597def2d6b4b4c75a319111e21b202}
+Muda cor do objeto para o R\+G\+B informado. 
+\begin{DoxyParams}{Parameters}
+{\em r} & Red de 0.\+0f a 1.\+0f. \\
+\hline
+{\em g} & Green de 0.\+0f a 1.\+0f. \\
+\hline
+{\em b} & Blue de 0.\+0f a 1.\+0f. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graphic_object_a64f5765caa33b38e72cc0179a0ce38eb}{}\index{Graphic\+Object@{Graphic\+Object}!check\+Click@{check\+Click}}
+\index{check\+Click@{check\+Click}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{check\+Click}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Graphic\+Object}$\ast$ Graphic\+Object\+::check\+Click (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_a64f5765caa33b38e72cc0179a0ce38eb}
+Verifica clique utilizando \hyperlink{class_b_box}{B\+Box} e scan\+Line (se necessário) no objeto gráfico e em todos os seus filhos. 
+\begin{DoxyParams}{Parameters}
+{\em x} & posição x do clique. \\
+\hline
+{\em y} & posição y do clique. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para o objeto gráfico selecionado, ou N\+U\+L\+L se ninguém foi selecionado. 
+\end{DoxyReturn}
+\hypertarget{class_graphic_object_ab5301d401d7a931a63a3e03dd00c4e6b}{}\index{Graphic\+Object@{Graphic\+Object}!check\+Vertex\+Click@{check\+Vertex\+Click}}
+\index{check\+Vertex\+Click@{check\+Vertex\+Click}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{check\+Vertex\+Click}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vertex}$\ast$ Graphic\+Object\+::check\+Vertex\+Click (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_ab5301d401d7a931a63a3e03dd00c4e6b}
+Verifica seleção de vértice no objeto gráfico e em todos os seus filhos. 
+\begin{DoxyParams}{Parameters}
+{\em x} & posição x do clique.  y posição y do clique. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ponteiro para o vértice selecionado, ou N\+U\+L\+L se nenhum foi selecionado. 
+\end{DoxyReturn}
+\hypertarget{class_graphic_object_a1daf1518ce33d49238fdd38be1c1005b}{}\index{Graphic\+Object@{Graphic\+Object}!draw@{draw}}
+\index{draw@{draw}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Graphic\+Object\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_a1daf1518ce33d49238fdd38be1c1005b}
+Desenha o objeto gráfico. \hypertarget{class_graphic_object_a28912ebe3bf736083f20998d6a6ee7ec}{}\index{Graphic\+Object@{Graphic\+Object}!finished@{finished}}
+\index{finished@{finished}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{finished}]{\setlength{\rightskip}{0pt plus 5cm}void Graphic\+Object\+::finished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_a28912ebe3bf736083f20998d6a6ee7ec}
+Finaliza objeto gráfico que está sendo inserido. \hypertarget{class_graphic_object_a62869cfb7bece3bd1f483b58345e5077}{}\index{Graphic\+Object@{Graphic\+Object}!remove\+If\+Present@{remove\+If\+Present}}
+\index{remove\+If\+Present@{remove\+If\+Present}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{remove\+If\+Present}]{\setlength{\rightskip}{0pt plus 5cm}void Graphic\+Object\+::remove\+If\+Present (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphic\+Object} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_a62869cfb7bece3bd1f483b58345e5077}
+Remove o ponteiro se ele for filho do objeto gráfico. 
+\begin{DoxyParams}{Parameters}
+{\em object} & ponteiro para o objeto que será removido. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graphic_object_aa0a713d04dfacd127e5d5bf54359c323}{}\index{Graphic\+Object@{Graphic\+Object}!remove\+Vertex@{remove\+Vertex}}
+\index{remove\+Vertex@{remove\+Vertex}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{remove\+Vertex}]{\setlength{\rightskip}{0pt plus 5cm}void Graphic\+Object\+::remove\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex} $\ast$}]{vertex}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_aa0a713d04dfacd127e5d5bf54359c323}
+Remove o vértice. 
+\begin{DoxyParams}{Parameters}
+{\em vertex} & ponteiro para o vértice que será removido. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graphic_object_aa51dede9d1b13aec64f64e1877ee9f81}{}\index{Graphic\+Object@{Graphic\+Object}!rotate@{rotate}}
+\index{rotate@{rotate}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}void Graphic\+Object\+::rotate (
+\begin{DoxyParamCaption}
+\item[{float}]{degrees}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_aa51dede9d1b13aec64f64e1877ee9f81}
+Faz rotação do objeto gráfico no eixo Z. 
+\begin{DoxyParams}{Parameters}
+{\em degrees} & graus de rotação. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graphic_object_aa587ad45dad9bb9ec59046c2d9d698c9}{}\index{Graphic\+Object@{Graphic\+Object}!scale@{scale}}
+\index{scale@{scale}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}void Graphic\+Object\+::scale (
+\begin{DoxyParamCaption}
+\item[{float}]{scale}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_aa587ad45dad9bb9ec59046c2d9d698c9}
+Faz sscala do objeto gráfico. 
+\begin{DoxyParams}{Parameters}
+{\em scale} & valor da escala em relação ao tamanho atual. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graphic_object_a6a7314e557934aa3598e0b52106e17e5}{}\index{Graphic\+Object@{Graphic\+Object}!set\+Selected@{set\+Selected}}
+\index{set\+Selected@{set\+Selected}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{set\+Selected}]{\setlength{\rightskip}{0pt plus 5cm}void Graphic\+Object\+::set\+Selected (
+\begin{DoxyParamCaption}
+\item[{bool}]{selected}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_a6a7314e557934aa3598e0b52106e17e5}
+Seta estado do objeto gráfico para selecionado ou não-\/selecionado. 
+\begin{DoxyParams}{Parameters}
+{\em selected} & flag indicando se o objeto gráfico está selecionado. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_graphic_object_a3fd446fb03658eb4119298db5d7182c6}{}\index{Graphic\+Object@{Graphic\+Object}!translate@{translate}}
+\index{translate@{translate}!Graphic\+Object@{Graphic\+Object}}
+\subsubsection[{translate}]{\setlength{\rightskip}{0pt plus 5cm}void Graphic\+Object\+::translate (
+\begin{DoxyParamCaption}
+\item[{float}]{t\+X, }
+\item[{float}]{t\+Y, }
+\item[{float}]{t\+Z}
+\end{DoxyParamCaption}
+)}\label{class_graphic_object_a3fd446fb03658eb4119298db5d7182c6}
+Faz translação do objeto gráfico para as posições passadas. 
+\begin{DoxyParams}{Parameters}
+{\em t\+X} & translação no eixo X. \\
+\hline
+{\em t\+Y} & translação no eixo Y. \\
+\hline
+{\em t\+Z} & translação no eixo Z. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Graphic\+Object.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,333 @@
+\hypertarget{group___world}{}\section{World}
+\label{group___world}\index{World@{World}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_camera}{Camera} \hyperlink{group___world_ga4afca247c0c56ea79cab1370b887b97f}{camera} (-\/400.\+0f, 400.\+0f,-\/400.\+0f, 400.\+0f)
+\item 
+void \hyperlink{group___world_gadc96c15b765be7e51c8567b0c00cb13d}{configure\+Display} ()
+\item 
+void \hyperlink{group___world_gaca1e6f446c874037ee430d8dd81700b3}{display\+S\+R\+U} ()
+\item 
+void \hyperlink{group___world_ga1e5b20fed15743656bb6d2e6a6ea6269}{display} ()
+\item 
+void \hyperlink{group___world_ga56c5cf8a568cff737ff95520cbe6b405}{draw} ()
+\item 
+void \hyperlink{group___world_ga478744e774e214e5e3bd22b94de5dba1}{mouse\+Movement} (int x, int y)
+\item 
+void \hyperlink{group___world_ga125707cf235695f4eb006113f0c01265}{mouse\+Click} (int button, int state, int x, int y)
+\item 
+void \hyperlink{group___world_ga506cb7eed81ca20c2d30c8c9a6ab7ed6}{transform\+To\+World\+Coordinates} (float $\ast$x, float $\ast$y)
+\item 
+void \hyperlink{group___world_gaef7ba2f69afb2d954545f64c7fe24b14}{keyboard} (unsigned char key, int x, int y)
+\item 
+void \hyperlink{group___world_ga6d1aed2e4b93b83f26470bf04279db2f}{insert\+Vertex} (int x, int y)
+\item 
+void \hyperlink{group___world_ga44a731ee054c222a204148a6a9857e0c}{finish\+Polygon} ()
+\item 
+void \hyperlink{group___world_ga591ee54a6594a1e52a0ff6e8b5db53a2}{check\+Click} (int x, int y)
+\item 
+void \hyperlink{group___world_ga96e10f0621a73bc0772fa77f678dc9f1}{add\+Son} ()
+\item 
+void \hyperlink{group___world_ga439564eafcd273e899793b6ac613cedb}{change\+Color} ()
+\item 
+void \hyperlink{group___world_ga79eda5216413cbd6774852aaa0bdc74c}{rotate\+Polygon} ()
+\item 
+void \hyperlink{group___world_gab7bbc906d2ca9264069df173ff58e0d6}{scale\+Up\+Polygon} ()
+\item 
+void \hyperlink{group___world_gac9205e45b3ee73eddf1c55b7bd178d53}{scale\+Down\+Polygon} ()
+\item 
+void \hyperlink{group___world_ga97f4baefa997b2f2dd9bc0f3ddadc11f}{move\+Polygon} (float mov\+To\+X, float mov\+To\+Y)
+\item 
+void \hyperlink{group___world_gacaa47af18ec11f8adc42a185e1ec94b0}{remove\+Polygon} ()
+\item 
+void \hyperlink{group___world_ga18767a78f84889ff1939c8a71f6c846e}{move\+Vertex} (float mov\+To\+X, float mov\+To\+Y)
+\item 
+void \hyperlink{group___world_ga75b6b3c17a173f8a1c96d49c3342d915}{remove\+Vertex} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \hyperlink{class_graphic_object}{Graphic\+Object} $\ast$ $>$ \hyperlink{group___world_ga487a015c0da59fa4bf352c364579937a}{objects}
+\item 
+bool \hyperlink{group___world_gaf4135d5d26b2f98538dc661cfc50736f}{insertion\+Mode\+On} = false
+\item 
+bool \hyperlink{group___world_ga9e0f70121f47c7b76983f4503d9e568c}{polygon\+Open\+On} = false
+\item 
+bool \hyperlink{group___world_ga8f24fd4b9cb0a0ec37c3047890140245}{adding\+Son} = false
+\item 
+\hyperlink{class_graphic_object}{Graphic\+Object} $\ast$ \hyperlink{group___world_ga46a409c7a0b8f22f142780e936c75159}{selected\+Object} = N\+U\+L\+L
+\item 
+\hyperlink{class_vertex}{Vertex} $\ast$ \hyperlink{group___world_ga7bc21ab50154f979a1a4193c1ff21ce8}{selected\+Vertex} = N\+U\+L\+L
+\item 
+int \hyperlink{group___world_gaf140802328ffe8a45749114b1c5a2056}{window\+Height} = 500
+\item 
+int \hyperlink{group___world_gaa61000540636bfdc4c9f27045ab84ce9}{window\+Width} = 500
+\item 
+float \hyperlink{group___world_gab71ed9ed9d554e0b59c5f3eea8a8b72c}{old\+X} = 0.\+0f
+\item 
+float \hyperlink{group___world_ga4a7acfaba7bfffa91fd66ff56629bfe5}{old\+Y} = 0.\+0f
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Atributos e métodos que representam o mundo gráfico. É o primeiro nível da apliação e possui o main. 
+
+\subsection{Function Documentation}
+\hypertarget{group___world_ga96e10f0621a73bc0772fa77f678dc9f1}{}\index{World@{World}!add\+Son@{add\+Son}}
+\index{add\+Son@{add\+Son}!World@{World}}
+\subsubsection[{add\+Son}]{\setlength{\rightskip}{0pt plus 5cm}void add\+Son (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group___world_ga96e10f0621a73bc0772fa77f678dc9f1}
+Adiciona um filho ao polígono selecionado. \hypertarget{group___world_ga4afca247c0c56ea79cab1370b887b97f}{}\index{World@{World}!camera@{camera}}
+\index{camera@{camera}!World@{World}}
+\subsubsection[{camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera} camera (
+\begin{DoxyParamCaption}
+\item[{-\/400.}]{0f, }
+\item[{400.}]{0f, }
+\item[{-\/400.}]{0f, }
+\item[{400.}]{0f}
+\end{DoxyParamCaption}
+)}\label{group___world_ga4afca247c0c56ea79cab1370b887b97f}
+\hyperlink{class_camera}{Camera} do usuário no mundo. \hypertarget{group___world_ga439564eafcd273e899793b6ac613cedb}{}\index{World@{World}!change\+Color@{change\+Color}}
+\index{change\+Color@{change\+Color}!World@{World}}
+\subsubsection[{change\+Color}]{\setlength{\rightskip}{0pt plus 5cm}void change\+Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group___world_ga439564eafcd273e899793b6ac613cedb}
+Muda a cor do polígono selecionado. \hypertarget{group___world_ga591ee54a6594a1e52a0ff6e8b5db53a2}{}\index{World@{World}!check\+Click@{check\+Click}}
+\index{check\+Click@{check\+Click}!World@{World}}
+\subsubsection[{check\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void check\+Click (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{group___world_ga591ee54a6594a1e52a0ff6e8b5db53a2}
+Verifica clique para seleção de objetos ou vértices nas posições passadas. 
+\begin{DoxyParams}{Parameters}
+{\em x} & posição x do clique no mundo. \\
+\hline
+{\em y} & posição y do clique no mundo. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___world_gadc96c15b765be7e51c8567b0c00cb13d}{}\index{World@{World}!configure\+Display@{configure\+Display}}
+\index{configure\+Display@{configure\+Display}!World@{World}}
+\subsubsection[{configure\+Display}]{\setlength{\rightskip}{0pt plus 5cm}void configure\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group___world_gadc96c15b765be7e51c8567b0c00cb13d}
+Configura o display Open\+G\+L. \hypertarget{group___world_ga1e5b20fed15743656bb6d2e6a6ea6269}{}\index{World@{World}!display@{display}}
+\index{display@{display}!World@{World}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group___world_ga1e5b20fed15743656bb6d2e6a6ea6269}
+Função G\+L\+U\+T de display O\+P\+E\+N\+G\+L. \hypertarget{group___world_gaca1e6f446c874037ee430d8dd81700b3}{}\index{World@{World}!display\+S\+R\+U@{display\+S\+R\+U}}
+\index{display\+S\+R\+U@{display\+S\+R\+U}!World@{World}}
+\subsubsection[{display\+S\+R\+U}]{\setlength{\rightskip}{0pt plus 5cm}void display\+S\+R\+U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group___world_gaca1e6f446c874037ee430d8dd81700b3}
+Mostra o S\+R\+U na tela para controle dos eixos. \hypertarget{group___world_ga56c5cf8a568cff737ff95520cbe6b405}{}\index{World@{World}!draw@{draw}}
+\index{draw@{draw}!World@{World}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group___world_ga56c5cf8a568cff737ff95520cbe6b405}
+Desenha todos os objetos presentes no mundo. \hypertarget{group___world_ga44a731ee054c222a204148a6a9857e0c}{}\index{World@{World}!finish\+Polygon@{finish\+Polygon}}
+\index{finish\+Polygon@{finish\+Polygon}!World@{World}}
+\subsubsection[{finish\+Polygon}]{\setlength{\rightskip}{0pt plus 5cm}void finish\+Polygon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group___world_ga44a731ee054c222a204148a6a9857e0c}
+Finaliza um polígono que está sendo inserido. \hypertarget{group___world_ga6d1aed2e4b93b83f26470bf04279db2f}{}\index{World@{World}!insert\+Vertex@{insert\+Vertex}}
+\index{insert\+Vertex@{insert\+Vertex}!World@{World}}
+\subsubsection[{insert\+Vertex}]{\setlength{\rightskip}{0pt plus 5cm}void insert\+Vertex (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{group___world_ga6d1aed2e4b93b83f26470bf04279db2f}
+Insere o vértice nas posições informadas. 
+\begin{DoxyParams}{Parameters}
+{\em x} & posição x no mundo. \\
+\hline
+{\em y} & posição y no mundo. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___world_gaef7ba2f69afb2d954545f64c7fe24b14}{}\index{World@{World}!keyboard@{keyboard}}
+\index{keyboard@{keyboard}!World@{World}}
+\subsubsection[{keyboard}]{\setlength{\rightskip}{0pt plus 5cm}void keyboard (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{group___world_gaef7ba2f69afb2d954545f64c7fe24b14}
+Função G\+L\+U\+T listener de keyboard click. 
+\begin{DoxyParams}{Parameters}
+{\em key} & tecla clicada. \\
+\hline
+{\em x} & posição x do mouse quando a tecla for pressionada. \\
+\hline
+{\em y} & posição y do mouse quando a tecla for pressionada. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___world_ga125707cf235695f4eb006113f0c01265}{}\index{World@{World}!mouse\+Click@{mouse\+Click}}
+\index{mouse\+Click@{mouse\+Click}!World@{World}}
+\subsubsection[{mouse\+Click}]{\setlength{\rightskip}{0pt plus 5cm}void mouse\+Click (
+\begin{DoxyParamCaption}
+\item[{int}]{button, }
+\item[{int}]{state, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{group___world_ga125707cf235695f4eb006113f0c01265}
+Função G\+L\+U\+T listener de mouse click. 
+\begin{DoxyParams}{Parameters}
+{\em button} & código do botão clicado. \\
+\hline
+{\em state} & estado do botão clicado. \\
+\hline
+{\em x} & valor x do clique. \\
+\hline
+{\em y} & valor y do clique. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___world_ga478744e774e214e5e3bd22b94de5dba1}{}\index{World@{World}!mouse\+Movement@{mouse\+Movement}}
+\index{mouse\+Movement@{mouse\+Movement}!World@{World}}
+\subsubsection[{mouse\+Movement}]{\setlength{\rightskip}{0pt plus 5cm}void mouse\+Movement (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{group___world_ga478744e774e214e5e3bd22b94de5dba1}
+Função G\+L\+U\+T listener de mouse movement. 
+\begin{DoxyParams}{Parameters}
+{\em x} & valor x do mouse. \\
+\hline
+{\em y} & valor y do mouse. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___world_ga97f4baefa997b2f2dd9bc0f3ddadc11f}{}\index{World@{World}!move\+Polygon@{move\+Polygon}}
+\index{move\+Polygon@{move\+Polygon}!World@{World}}
+\subsubsection[{move\+Polygon}]{\setlength{\rightskip}{0pt plus 5cm}void move\+Polygon (
+\begin{DoxyParamCaption}
+\item[{float}]{mov\+To\+X, }
+\item[{float}]{mov\+To\+Y}
+\end{DoxyParamCaption}
+)}\label{group___world_ga97f4baefa997b2f2dd9bc0f3ddadc11f}
+Move o polígono selecionado para as posições passadas. 
+\begin{DoxyParams}{Parameters}
+{\em mov\+To\+X} & movimento X do polígono. \\
+\hline
+{\em mov\+To\+Y} & movimento Y do polígono. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___world_ga18767a78f84889ff1939c8a71f6c846e}{}\index{World@{World}!move\+Vertex@{move\+Vertex}}
+\index{move\+Vertex@{move\+Vertex}!World@{World}}
+\subsubsection[{move\+Vertex}]{\setlength{\rightskip}{0pt plus 5cm}void move\+Vertex (
+\begin{DoxyParamCaption}
+\item[{float}]{mov\+To\+X, }
+\item[{float}]{mov\+To\+Y}
+\end{DoxyParamCaption}
+)}\label{group___world_ga18767a78f84889ff1939c8a71f6c846e}
+Move o vértice selecionado para as posições passadas 
+\begin{DoxyParams}{Parameters}
+{\em mov\+To\+X} & movimento X do vértice. \\
+\hline
+{\em mov\+To\+Y} & movimento Y do vértice. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___world_gacaa47af18ec11f8adc42a185e1ec94b0}{}\index{World@{World}!remove\+Polygon@{remove\+Polygon}}
+\index{remove\+Polygon@{remove\+Polygon}!World@{World}}
+\subsubsection[{remove\+Polygon}]{\setlength{\rightskip}{0pt plus 5cm}void remove\+Polygon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group___world_gacaa47af18ec11f8adc42a185e1ec94b0}
+Remove o polígono selecionado. \hypertarget{group___world_ga75b6b3c17a173f8a1c96d49c3342d915}{}\index{World@{World}!remove\+Vertex@{remove\+Vertex}}
+\index{remove\+Vertex@{remove\+Vertex}!World@{World}}
+\subsubsection[{remove\+Vertex}]{\setlength{\rightskip}{0pt plus 5cm}void remove\+Vertex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group___world_ga75b6b3c17a173f8a1c96d49c3342d915}
+Remove o vértice selecionado. \hypertarget{group___world_ga79eda5216413cbd6774852aaa0bdc74c}{}\index{World@{World}!rotate\+Polygon@{rotate\+Polygon}}
+\index{rotate\+Polygon@{rotate\+Polygon}!World@{World}}
+\subsubsection[{rotate\+Polygon}]{\setlength{\rightskip}{0pt plus 5cm}void rotate\+Polygon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group___world_ga79eda5216413cbd6774852aaa0bdc74c}
+Rotaciona o polígono selecionado em 10 graus no eixo Z. \hypertarget{group___world_gac9205e45b3ee73eddf1c55b7bd178d53}{}\index{World@{World}!scale\+Down\+Polygon@{scale\+Down\+Polygon}}
+\index{scale\+Down\+Polygon@{scale\+Down\+Polygon}!World@{World}}
+\subsubsection[{scale\+Down\+Polygon}]{\setlength{\rightskip}{0pt plus 5cm}void scale\+Down\+Polygon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group___world_gac9205e45b3ee73eddf1c55b7bd178d53}
+Escala o polígono selecionado em menos 10\%. \hypertarget{group___world_gab7bbc906d2ca9264069df173ff58e0d6}{}\index{World@{World}!scale\+Up\+Polygon@{scale\+Up\+Polygon}}
+\index{scale\+Up\+Polygon@{scale\+Up\+Polygon}!World@{World}}
+\subsubsection[{scale\+Up\+Polygon}]{\setlength{\rightskip}{0pt plus 5cm}void scale\+Up\+Polygon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{group___world_gab7bbc906d2ca9264069df173ff58e0d6}
+Escala o polígono selecionado em mais 10\%. \hypertarget{group___world_ga506cb7eed81ca20c2d30c8c9a6ab7ed6}{}\index{World@{World}!transform\+To\+World\+Coordinates@{transform\+To\+World\+Coordinates}}
+\index{transform\+To\+World\+Coordinates@{transform\+To\+World\+Coordinates}!World@{World}}
+\subsubsection[{transform\+To\+World\+Coordinates}]{\setlength{\rightskip}{0pt plus 5cm}void transform\+To\+World\+Coordinates (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{x, }
+\item[{float $\ast$}]{y}
+\end{DoxyParamCaption}
+)}\label{group___world_ga506cb7eed81ca20c2d30c8c9a6ab7ed6}
+Transforma posições de janela em posições do mundo Open\+G\+L utilizando o método glu\+Un\+Project. 
+\begin{DoxyParams}{Parameters}
+{\em Ponteiro} & para a posição janela x que retornará o valor mundo Open\+G\+L x. \\
+\hline
+{\em Ponteiro} & para a posição janela y que retornará o valor mundo Open\+G\+L y. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\hypertarget{group___world_ga8f24fd4b9cb0a0ec37c3047890140245}{}\index{World@{World}!adding\+Son@{adding\+Son}}
+\index{adding\+Son@{adding\+Son}!World@{World}}
+\subsubsection[{adding\+Son}]{\setlength{\rightskip}{0pt plus 5cm}bool adding\+Son = false}\label{group___world_ga8f24fd4b9cb0a0ec37c3047890140245}
+Flag indicando se no modo de inserção o polígono que está sendo inserido é filho. \hypertarget{group___world_gaf4135d5d26b2f98538dc661cfc50736f}{}\index{World@{World}!insertion\+Mode\+On@{insertion\+Mode\+On}}
+\index{insertion\+Mode\+On@{insertion\+Mode\+On}!World@{World}}
+\subsubsection[{insertion\+Mode\+On}]{\setlength{\rightskip}{0pt plus 5cm}bool insertion\+Mode\+On = false}\label{group___world_gaf4135d5d26b2f98538dc661cfc50736f}
+Flag indicando se o modo de inserção está ativo. \hypertarget{group___world_ga487a015c0da59fa4bf352c364579937a}{}\index{World@{World}!objects@{objects}}
+\index{objects@{objects}!World@{World}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<${\bf Graphic\+Object}$\ast$$>$ objects}\label{group___world_ga487a015c0da59fa4bf352c364579937a}
+Lista de objetos do mundo (primeiro nível do grafo de cena). \hypertarget{group___world_gab71ed9ed9d554e0b59c5f3eea8a8b72c}{}\index{World@{World}!old\+X@{old\+X}}
+\index{old\+X@{old\+X}!World@{World}}
+\subsubsection[{old\+X}]{\setlength{\rightskip}{0pt plus 5cm}float old\+X = 0.\+0f}\label{group___world_gab71ed9ed9d554e0b59c5f3eea8a8b72c}
+Float temporário que guarda o x do clique. \hypertarget{group___world_ga4a7acfaba7bfffa91fd66ff56629bfe5}{}\index{World@{World}!old\+Y@{old\+Y}}
+\index{old\+Y@{old\+Y}!World@{World}}
+\subsubsection[{old\+Y}]{\setlength{\rightskip}{0pt plus 5cm}float old\+Y = 0.\+0f}\label{group___world_ga4a7acfaba7bfffa91fd66ff56629bfe5}
+Float temporário que guarda o y do clique. \hypertarget{group___world_ga9e0f70121f47c7b76983f4503d9e568c}{}\index{World@{World}!polygon\+Open\+On@{polygon\+Open\+On}}
+\index{polygon\+Open\+On@{polygon\+Open\+On}!World@{World}}
+\subsubsection[{polygon\+Open\+On}]{\setlength{\rightskip}{0pt plus 5cm}bool polygon\+Open\+On = false}\label{group___world_ga9e0f70121f47c7b76983f4503d9e568c}
+Flag indicando se no modo de inserção o polígono deverá ser aberto. \hypertarget{group___world_ga46a409c7a0b8f22f142780e936c75159}{}\index{World@{World}!selected\+Object@{selected\+Object}}
+\index{selected\+Object@{selected\+Object}!World@{World}}
+\subsubsection[{selected\+Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Graphic\+Object}$\ast$ selected\+Object = N\+U\+L\+L}\label{group___world_ga46a409c7a0b8f22f142780e936c75159}
+Ponteiro para o objeto selecionado. \hypertarget{group___world_ga7bc21ab50154f979a1a4193c1ff21ce8}{}\index{World@{World}!selected\+Vertex@{selected\+Vertex}}
+\index{selected\+Vertex@{selected\+Vertex}!World@{World}}
+\subsubsection[{selected\+Vertex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vertex}$\ast$ selected\+Vertex = N\+U\+L\+L}\label{group___world_ga7bc21ab50154f979a1a4193c1ff21ce8}
+Ponteiro para o vértice selecionado. \hypertarget{group___world_gaf140802328ffe8a45749114b1c5a2056}{}\index{World@{World}!window\+Height@{window\+Height}}
+\index{window\+Height@{window\+Height}!World@{World}}
+\subsubsection[{window\+Height}]{\setlength{\rightskip}{0pt plus 5cm}int window\+Height = 500}\label{group___world_gaf140802328ffe8a45749114b1c5a2056}
+Altura da janela. \hypertarget{group___world_gaa61000540636bfdc4c9f27045ab84ce9}{}\index{World@{World}!window\+Width@{window\+Width}}
+\index{window\+Width@{window\+Width}!World@{World}}
+\subsubsection[{window\+Width}]{\setlength{\rightskip}{0pt plus 5cm}int window\+Width = 500}\label{group___world_gaa61000540636bfdc4c9f27045ab84ce9}
+Largura da janela. 

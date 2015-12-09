@@ -1,0 +1,132 @@
+\hypertarget{class_b_box}{}\section{B\+Box Class Reference}
+\label{class_b_box}\index{B\+Box@{B\+Box}}
+
+
+{\ttfamily \#include $<$B\+Box.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_b_box_ae26e694ee88779b928e8d3726f8213a1}{B\+Box} ()
+\item 
+virtual \hyperlink{class_b_box_acba318726fe0da14cd8424b49d477c7b}{$\sim$\+B\+Box} ()
+\item 
+void \hyperlink{class_b_box_ae70c8c325f859e756612cf2779941e28}{calculate\+B\+Box} (std\+::list$<$ \hyperlink{class_vertex}{Vertex} $>$ vertices)
+\item 
+bool \hyperlink{class_b_box_afab37eda03e3703ae21113cc21f4aa24}{inside\+B\+Box} (float x, float y)
+\item 
+\hyperlink{class_vertex}{Vertex} \hyperlink{class_b_box_ac005bd929e6dfa149f19baa4d4383138}{get\+Center} ()
+\item 
+float \hyperlink{class_b_box_a170ab8a1d4e78ec5acb8e88e6798bb33}{get\+X\+Min} ()
+\item 
+float \hyperlink{class_b_box_a52c750ccefca227b7b3ca04508c79f7a}{get\+X\+Max} ()
+\item 
+float \hyperlink{class_b_box_a002fb7b8ca458af6bccfcfa37c65df11}{get\+Y\+Min} ()
+\item 
+float \hyperlink{class_b_box_a9fa50aa4626f186d84c1ab72cd725c3f}{get\+Y\+Max} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_b_box}{B\+Box}. Representa a \hyperlink{class_b_box}{B\+Box} de um objecto gráfico. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_b_box_ae26e694ee88779b928e8d3726f8213a1}{}\index{B\+Box@{B\+Box}!B\+Box@{B\+Box}}
+\index{B\+Box@{B\+Box}!B\+Box@{B\+Box}}
+\subsubsection[{B\+Box}]{\setlength{\rightskip}{0pt plus 5cm}B\+Box\+::\+B\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_b_box_ae26e694ee88779b928e8d3726f8213a1}
+Construtor \hypertarget{class_b_box_acba318726fe0da14cd8424b49d477c7b}{}\index{B\+Box@{B\+Box}!````~B\+Box@{$\sim$\+B\+Box}}
+\index{````~B\+Box@{$\sim$\+B\+Box}!B\+Box@{B\+Box}}
+\subsubsection[{$\sim$\+B\+Box}]{\setlength{\rightskip}{0pt plus 5cm}virtual B\+Box\+::$\sim$\+B\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_b_box_acba318726fe0da14cd8424b49d477c7b}
+Destrutor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_b_box_ae70c8c325f859e756612cf2779941e28}{}\index{B\+Box@{B\+Box}!calculate\+B\+Box@{calculate\+B\+Box}}
+\index{calculate\+B\+Box@{calculate\+B\+Box}!B\+Box@{B\+Box}}
+\subsubsection[{calculate\+B\+Box}]{\setlength{\rightskip}{0pt plus 5cm}void B\+Box\+::calculate\+B\+Box (
+\begin{DoxyParamCaption}
+\item[{std\+::list$<$ {\bf Vertex} $>$}]{vertices}
+\end{DoxyParamCaption}
+)}\label{class_b_box_ae70c8c325f859e756612cf2779941e28}
+Cálculo da bbox. Recebe uma lista de vértices e atualiza os mínimos e máximos para x e y. 
+\begin{DoxyParams}{Parameters}
+{\em vertices} & é uma lista de vértices do objeto gráfico. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_b_box_ac005bd929e6dfa149f19baa4d4383138}{}\index{B\+Box@{B\+Box}!get\+Center@{get\+Center}}
+\index{get\+Center@{get\+Center}!B\+Box@{B\+Box}}
+\subsubsection[{get\+Center}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vertex} B\+Box\+::get\+Center (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_b_box_ac005bd929e6dfa149f19baa4d4383138}
+\begin{DoxyReturn}{Returns}
+O centro da bbox. 
+\end{DoxyReturn}
+\hypertarget{class_b_box_a52c750ccefca227b7b3ca04508c79f7a}{}\index{B\+Box@{B\+Box}!get\+X\+Max@{get\+X\+Max}}
+\index{get\+X\+Max@{get\+X\+Max}!B\+Box@{B\+Box}}
+\subsubsection[{get\+X\+Max}]{\setlength{\rightskip}{0pt plus 5cm}float B\+Box\+::get\+X\+Max (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_b_box_a52c750ccefca227b7b3ca04508c79f7a}
+\begin{DoxyReturn}{Returns}
+O x máximo da bbox. 
+\end{DoxyReturn}
+\hypertarget{class_b_box_a170ab8a1d4e78ec5acb8e88e6798bb33}{}\index{B\+Box@{B\+Box}!get\+X\+Min@{get\+X\+Min}}
+\index{get\+X\+Min@{get\+X\+Min}!B\+Box@{B\+Box}}
+\subsubsection[{get\+X\+Min}]{\setlength{\rightskip}{0pt plus 5cm}float B\+Box\+::get\+X\+Min (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_b_box_a170ab8a1d4e78ec5acb8e88e6798bb33}
+\begin{DoxyReturn}{Returns}
+O x mínimo da bbox. 
+\end{DoxyReturn}
+\hypertarget{class_b_box_a9fa50aa4626f186d84c1ab72cd725c3f}{}\index{B\+Box@{B\+Box}!get\+Y\+Max@{get\+Y\+Max}}
+\index{get\+Y\+Max@{get\+Y\+Max}!B\+Box@{B\+Box}}
+\subsubsection[{get\+Y\+Max}]{\setlength{\rightskip}{0pt plus 5cm}float B\+Box\+::get\+Y\+Max (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_b_box_a9fa50aa4626f186d84c1ab72cd725c3f}
+\begin{DoxyReturn}{Returns}
+O y máximo da bbox. 
+\end{DoxyReturn}
+\hypertarget{class_b_box_a002fb7b8ca458af6bccfcfa37c65df11}{}\index{B\+Box@{B\+Box}!get\+Y\+Min@{get\+Y\+Min}}
+\index{get\+Y\+Min@{get\+Y\+Min}!B\+Box@{B\+Box}}
+\subsubsection[{get\+Y\+Min}]{\setlength{\rightskip}{0pt plus 5cm}float B\+Box\+::get\+Y\+Min (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_b_box_a002fb7b8ca458af6bccfcfa37c65df11}
+\begin{DoxyReturn}{Returns}
+O y mínimo da bbox. 
+\end{DoxyReturn}
+\hypertarget{class_b_box_afab37eda03e3703ae21113cc21f4aa24}{}\index{B\+Box@{B\+Box}!inside\+B\+Box@{inside\+B\+Box}}
+\index{inside\+B\+Box@{inside\+B\+Box}!B\+Box@{B\+Box}}
+\subsubsection[{inside\+B\+Box}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+Box\+::inside\+B\+Box (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}\label{class_b_box_afab37eda03e3703ae21113cc21f4aa24}
+Checa clique. Verifica se as posições x,y passadas se encontram dentro da \hyperlink{class_b_box}{B\+Box}. 
+\begin{DoxyParams}{Parameters}
+{\em x} & é o valor x do clique. \\
+\hline
+{\em y} & é o valor y do clique. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+B\+Box.\+h\end{DoxyCompactItemize}

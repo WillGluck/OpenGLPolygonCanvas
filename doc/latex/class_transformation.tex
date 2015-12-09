@@ -1,0 +1,170 @@
+\hypertarget{class_transformation}{}\section{Transformation Class Reference}
+\label{class_transformation}\index{Transformation@{Transformation}}
+
+
+{\ttfamily \#include $<$Transformation.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_transformation_ae2ac921bb44c1f907761013ab6dbfc81}{assign\+Identity} ()
+\item 
+void \hyperlink{class_transformation_ac66fdd4bb9108746ef69948b9a4c74cc}{assign\+Translation} (float t\+X, float t\+Y, float t\+Z)
+\item 
+void \hyperlink{class_transformation_a2a6f9f707cefb46331091a5543511723}{assign\+Scale} (float scale)
+\item 
+void \hyperlink{class_transformation_a707222e4e2920066b5aa74ca8f7e4e86}{assign\+Rotation\+X} (float degrees)
+\item 
+void \hyperlink{class_transformation_af6d79f2ae65e413028668d5931c2911c}{assign\+Rotation\+Y} (float degrees)
+\item 
+void \hyperlink{class_transformation_ae516d84646e1b76a944b4e089974663d}{assign\+Rotation\+Z} (float degrees)
+\item 
+\hyperlink{class_transformation}{Transformation} \hyperlink{class_transformation_ae5d163335122285fe6aea22e85a685d4}{transform\+Matrix} (\hyperlink{class_transformation}{Transformation} matrix)
+\item 
+void \hyperlink{class_transformation_aa5cce34a712e9dd7f46068012c5bd794}{transform\+Vector} (\hyperlink{class_vertex}{Vertex} $\ast$origin\+Vertex, \hyperlink{class_vertex}{Vertex} $\ast$destination\+Vertex)
+\item 
+void \hyperlink{class_transformation_ae07759ae90a63e999628d5e4113e391f}{get\+Matrix} (float $\ast$matrix)
+\item 
+void \hyperlink{class_transformation_a3ff52ef74e5f1fc79c7ad82e35d30313}{set\+Matrix} (float matrix\mbox{[}16\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe Transformação. Representa uma matriz de transformação de um objeto gráfico e engloba todos os métodos de transformação. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_transformation_ae2ac921bb44c1f907761013ab6dbfc81}{}\index{Transformation@{Transformation}!assign\+Identity@{assign\+Identity}}
+\index{assign\+Identity@{assign\+Identity}!Transformation@{Transformation}}
+\subsubsection[{assign\+Identity}]{\setlength{\rightskip}{0pt plus 5cm}void Transformation\+::assign\+Identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_transformation_ae2ac921bb44c1f907761013ab6dbfc81}
+Seta a matriz de transformação para identidade. \hypertarget{class_transformation_a707222e4e2920066b5aa74ca8f7e4e86}{}\index{Transformation@{Transformation}!assign\+Rotation\+X@{assign\+Rotation\+X}}
+\index{assign\+Rotation\+X@{assign\+Rotation\+X}!Transformation@{Transformation}}
+\subsubsection[{assign\+Rotation\+X}]{\setlength{\rightskip}{0pt plus 5cm}void Transformation\+::assign\+Rotation\+X (
+\begin{DoxyParamCaption}
+\item[{float}]{degrees}
+\end{DoxyParamCaption}
+)}\label{class_transformation_a707222e4e2920066b5aa74ca8f7e4e86}
+Seta a matriz de transformação para realizar a rotação no eixo X nos graus passados. 
+\begin{DoxyParams}{Parameters}
+{\em degrees} & graus da rotação. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_transformation_af6d79f2ae65e413028668d5931c2911c}{}\index{Transformation@{Transformation}!assign\+Rotation\+Y@{assign\+Rotation\+Y}}
+\index{assign\+Rotation\+Y@{assign\+Rotation\+Y}!Transformation@{Transformation}}
+\subsubsection[{assign\+Rotation\+Y}]{\setlength{\rightskip}{0pt plus 5cm}void Transformation\+::assign\+Rotation\+Y (
+\begin{DoxyParamCaption}
+\item[{float}]{degrees}
+\end{DoxyParamCaption}
+)}\label{class_transformation_af6d79f2ae65e413028668d5931c2911c}
+Seta a matriz de transformação para realizar a rotação no eixo Y nos graus passados. 
+\begin{DoxyParams}{Parameters}
+{\em degrees} & graus da rotação. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_transformation_ae516d84646e1b76a944b4e089974663d}{}\index{Transformation@{Transformation}!assign\+Rotation\+Z@{assign\+Rotation\+Z}}
+\index{assign\+Rotation\+Z@{assign\+Rotation\+Z}!Transformation@{Transformation}}
+\subsubsection[{assign\+Rotation\+Z}]{\setlength{\rightskip}{0pt plus 5cm}void Transformation\+::assign\+Rotation\+Z (
+\begin{DoxyParamCaption}
+\item[{float}]{degrees}
+\end{DoxyParamCaption}
+)}\label{class_transformation_ae516d84646e1b76a944b4e089974663d}
+Seta a matriz de transformação para realizar a rotação no eixo Z nos graus passados. 
+\begin{DoxyParams}{Parameters}
+{\em degrees} & graus da rotação. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_transformation_a2a6f9f707cefb46331091a5543511723}{}\index{Transformation@{Transformation}!assign\+Scale@{assign\+Scale}}
+\index{assign\+Scale@{assign\+Scale}!Transformation@{Transformation}}
+\subsubsection[{assign\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}void Transformation\+::assign\+Scale (
+\begin{DoxyParamCaption}
+\item[{float}]{scale}
+\end{DoxyParamCaption}
+)}\label{class_transformation_a2a6f9f707cefb46331091a5543511723}
+Seta a matriz de transformação para a escala passada. 
+\begin{DoxyParams}{Parameters}
+{\em scale} & escala em todos os eixos. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_transformation_ac66fdd4bb9108746ef69948b9a4c74cc}{}\index{Transformation@{Transformation}!assign\+Translation@{assign\+Translation}}
+\index{assign\+Translation@{assign\+Translation}!Transformation@{Transformation}}
+\subsubsection[{assign\+Translation}]{\setlength{\rightskip}{0pt plus 5cm}void Transformation\+::assign\+Translation (
+\begin{DoxyParamCaption}
+\item[{float}]{t\+X, }
+\item[{float}]{t\+Y, }
+\item[{float}]{t\+Z}
+\end{DoxyParamCaption}
+)}\label{class_transformation_ac66fdd4bb9108746ef69948b9a4c74cc}
+Seta a matriz de transformação para a translação passada. 
+\begin{DoxyParams}{Parameters}
+{\em t\+X} & translação no eixo x. \\
+\hline
+{\em t\+Y} & translação no eixo y. \\
+\hline
+{\em t\+Z} & translaçao no eixo z. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_transformation_ae07759ae90a63e999628d5e4113e391f}{}\index{Transformation@{Transformation}!get\+Matrix@{get\+Matrix}}
+\index{get\+Matrix@{get\+Matrix}!Transformation@{Transformation}}
+\subsubsection[{get\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Transformation\+::get\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{matrix}
+\end{DoxyParamCaption}
+)}\label{class_transformation_ae07759ae90a63e999628d5e4113e391f}
+Retorna a matriz de transformação de 16 posições para o buffer passado. 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & É o buffer que receberá cópia da matriz de transformação do objeto. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_transformation_a3ff52ef74e5f1fc79c7ad82e35d30313}{}\index{Transformation@{Transformation}!set\+Matrix@{set\+Matrix}}
+\index{set\+Matrix@{set\+Matrix}!Transformation@{Transformation}}
+\subsubsection[{set\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Transformation\+::set\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{matrix\mbox{[}16\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{class_transformation_a3ff52ef74e5f1fc79c7ad82e35d30313}
+Seta a matriz de transformação. 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Array de 16 posições que será setada como a matriz de transformação. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_transformation_ae5d163335122285fe6aea22e85a685d4}{}\index{Transformation@{Transformation}!transform\+Matrix@{transform\+Matrix}}
+\index{transform\+Matrix@{transform\+Matrix}!Transformation@{Transformation}}
+\subsubsection[{transform\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Transformation} Transformation\+::transform\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf Transformation}}]{matrix}
+\end{DoxyParamCaption}
+)}\label{class_transformation_ae5d163335122285fe6aea22e85a685d4}
+Realiza a multiplicação de matrizes entre as duas transformações. 
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Transformação que será multiplicada com a chamada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nova matriz de transformação resultante. 
+\end{DoxyReturn}
+\hypertarget{class_transformation_aa5cce34a712e9dd7f46068012c5bd794}{}\index{Transformation@{Transformation}!transform\+Vector@{transform\+Vector}}
+\index{transform\+Vector@{transform\+Vector}!Transformation@{Transformation}}
+\subsubsection[{transform\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}void Transformation\+::transform\+Vector (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex} $\ast$}]{origin\+Vertex, }
+\item[{{\bf Vertex} $\ast$}]{destination\+Vertex}
+\end{DoxyParamCaption}
+)}\label{class_transformation_aa5cce34a712e9dd7f46068012c5bd794}
+Realiza a multiplicação da matriz de transformação com o vértice passado, encontrando a posição real do ponto na tela. 
+\begin{DoxyParams}{Parameters}
+{\em origin\+Vertex} & ponteiro para o vértice de origem que será transformado. \\
+\hline
+{\em destination\+Vertex} & ponteiro para o vértice destino que receberá o resultado da transformação. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+Readme -\/ Tentativa de atualizar \hyperlink{class_b_box}{B\+Box} após transformações. 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Transformation.\+h\end{DoxyCompactItemize}
