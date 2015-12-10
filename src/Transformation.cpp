@@ -5,9 +5,11 @@
  *      Author: bigwi_000
  */
 
-#include <strings.h>
+#include <cstring>
 #include <math.h>
 #include "../include/Transformation.h"
+
+using namespace std;
 
 Transformation::Transformation() {
 	this->assignIdentity();
@@ -83,7 +85,7 @@ void Transformation::transformVector(Vertex* originVertex, Vertex* destinationVe
 }
 
 void Transformation::getMatrix(float* matrix) {
-	memcpy((void*) matrix, (void*) this->matrix , sizeof(float) * 16);
+	std::memcpy((void*) matrix, (void*) this->matrix , sizeof(float) * 16);
 }
 
 void Transformation::setMatrix(float matrix[16]) {

@@ -3,4 +3,4 @@ INCLUDES := -I ./include/
 CPP_FILES := $(wildcard ./src/*.cpp)
 
 OpenGLPolygonsCanvas:
-	gcc -v -o OpenGLPolygonCanvas $(CPP_FILES) $(LIBS) $(INCLUDES)
+	gcc -o OpenGLPolygonCanvas $(CPP_FILES) $(LIBS) $(INCLUDES)
